@@ -1,16 +1,8 @@
-.idea/
-*.iml
+# Notas geradas via /doc, locais
+doc/
 
-# Book build output
-_book/
+# Config local do Claude Code
+.claude/
 
-# eBook build output
-*.epub
-*.mobi
-*.pdf
-
-# templated files
-meta.tex
-
-game.db.json
+# macOS
 .DS_Store
