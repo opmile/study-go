@@ -61,8 +61,9 @@ study-go/
 │   ├── fase-5-aplicacao/         # HTTP server, JSON, WebSockets (Semanas 7–8)
 │   ├── fase-6-qa/                # Q&A de consulta, não sequência (Semana 9)
 │   └── _meta/                    # Meta do livro, sem conteúdo de estudo
-├── exercicios/                   # (planejado) implementações próprias por capítulo
-└── doc/                          # (planejado) notas geradas via /doc
+├── exercs/                       # implementações próprias por capítulo (1-hello-world, 2-integers, ...)
+│   └── <cap>/NNN_*.md            # notas de aprendizado por capítulo (geradas via /doc)
+└── update-plan/                  # specs paralelas — NÃO faz parte do escopo do livro
 ```
 
 ## Comandos
@@ -76,6 +77,9 @@ go test ./fase-2-idiomas/...
 
 # Rodar testes de um capítulo específico
 go test ./fase-1-fundamentos/hello-world/...
+
+# Formatar código antes de commit (idiomático Go)
+gofmt -w .
 ```
 
 ## Decisões estratégicas registradas
@@ -90,3 +94,4 @@ go test ./fase-1-fundamentos/hello-world/...
 - Não usar emojis.
 - Este projeto é isolado, só estudo de linguagem.
 - Não assumir nível iniciante em programação. Assumir nível iniciante em Go.
+- `update-plan/` é escopo paralelo (specs de outros projetos). Não misturar com a maratona do livro.
