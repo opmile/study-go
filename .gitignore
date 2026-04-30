@@ -6,3 +6,4 @@ doc/
 
 # macOS
 .DS_Store
+.claude.local.md
