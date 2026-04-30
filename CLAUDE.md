@@ -62,7 +62,10 @@ study-go/
 │   ├── fase-6-qa/                # Q&A de consulta, não sequência (Semana 9)
 │   └── _meta/                    # Meta do livro, sem conteúdo de estudo
 ├── exercs/                       # implementações próprias por capítulo (1-hello-world, 2-integers, ...)
-│   └── <cap>/NNN_*.md            # notas de aprendizado por capítulo (geradas via /doc)
+│   └── <cap>/                    # cada capítulo é módulo Go isolado (próprio go.mod)
+│       ├── go.mod
+│       ├── <impl>.go + <impl>_test.go
+│       └── NNN_*.md              # notas de aprendizado (geradas via /doc)
 └── update-plan/                  # specs paralelas — NÃO faz parte do escopo do livro
 ```
 
@@ -86,6 +89,11 @@ gofmt -w .
 
 - **Frameworks web (Gin, Echo, etc.) vêm depois da Fase 5.** Aprender Gin antes de entender `net/http` puro cria abstração sem substrato. Fase 5 constrói HTTP server do zero — só após isso frameworks fazem sentido.
 - **Fonte única:** qualquer dúvida que o livro não cobre → Go by Example como dicionário. Nada além disso.
+- **Convenção de prefixo nos capítulos:** quando capítulo ganha implementação própria em `exercs/`, pasta correspondente em `learn-go-with-tests/fase-N/` recebe mesmo prefixo numérico (`1-hello-world`, `2-integers`, ...). Mantém ordem de estudo explícita.
+
+## Convenção de commits
+
+Quando pedir commit de um conjunto de mudanças, dividir em **unidades de trabalho** (renomeação de estrutura ≠ implementação ≠ documentação), não mega-commit. Mesmo que `/commit-commands:commit` produza um só, fazer reset e split.
 
 ## O que NÃO fazer
 
