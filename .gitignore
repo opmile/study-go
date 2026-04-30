@@ -1,6 +1,9 @@
 # Notas geradas via /doc, locais
 doc/
 
+# Specs paralelas — escopo fora do estudo do livro
+update-plan/
+
 # Config local do Claude Code
 .claude/
 
