@@ -70,10 +70,6 @@ Fase 2 — Idiomas:
 - [ ] sync
 - [ ] context
 
-## Stack da estudante
-
-Java/Spring Boot e React/TypeScript de origem. Aprendendo Go para estágio na Arco Educação (stack Go + Kotlin). Mapas mentais Java → Go aparecem nas notas quando agregam — nunca como rodapé fixo.
-
 ## Licença e atribuição
 
 `learn-go-with-tests/` é fork de [quii/learn-go-with-tests](https://github.com/quii/learn-go-with-tests) (MIT). Código próprio em `exercs/` é estudo pessoal, sem licença pública definida.
